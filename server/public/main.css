@@ -1,12 +1,28 @@
-html {
+html, * {
     box-sizing: border-box;
   }
 
 body {
-    background-color: whitesmoke;
+    
+    background-size: cover;
     margin: 0;
   
 }
+
+body::after {
+
+    content: "";
+    background: url('images/vinyl-background.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  
+  }
 
 .header {
     font-family: 'Abril Fatface', cursive;
@@ -25,3 +41,40 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.sidebar a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    background-color: black;
+  }
+  
+  .sidebar a:hover {
+    left: 0;
+  }
+  
+  .add {
+    top: 20px;
+    
+  }
+  
+  .search {
+    top: 80px;
+    
+  }
+  
+  .list {
+    top: 140px;
+    
+  }
+  
+  .wanted {
+    top: 200px;
+    
+  }
