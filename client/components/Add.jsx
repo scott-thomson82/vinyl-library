@@ -17,19 +17,22 @@ class Add extends React.Component {
         <div className="add-form">
           <form> 
             <div>
-            <input type="text" name="artist" placeholder="Enter Artist" />
-            <input type="submit"/>
+            <input type="text" name="artist" placeholder="Artist" />
+            
             </div> 
 
             <div>
-            <input type="text" name="album" placeholder="Enter Album" />
-            <input type="submit"/>
+            <input type="text" name="album" placeholder="Album" />
+            
             </div> 
 
             <div>
-            <input type="text" name="genre" placeholder="Enter Genre" />
-            <input type="submit"/>
+            <input type="text" name="genre" placeholder="Genre" />
+            
             </div> 
+            <div>
+            <input type="submit" value="submit"/>
+            </div>
           </form>
         </div>
 

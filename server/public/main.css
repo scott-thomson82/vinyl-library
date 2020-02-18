@@ -25,13 +25,17 @@ body::after {
   }
 
 .header {
-    font-family: 'Abril Fatface', cursive;
+    
     height: 260px;
     width: 100%;
     color: black;
     text-align: center;
     font-size: 40px;
     padding: 40px 20px;
+    font-family: 'Fascinate Inline', cursive;
+
+    
+    
 }
 
 .logo {
@@ -79,3 +83,37 @@ body::after {
     top: 200px;
     
   }
+
+  input[type=text] {
+    width: 170px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+    
+  
+  }
+  
+  input[type=text]:focus {
+    width: 30%;
+  }
+
+  input[type=submit] {
+  background-color: rgb(140, 244, 143);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 165px;
+  
+
+}
+
+.add-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
