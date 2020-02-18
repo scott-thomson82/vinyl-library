@@ -53,6 +53,7 @@ body::after {
     color: white;
     border-radius: 0 5px 5px 0;
     background-color: black;
+    
   }
   
   .sidebar a:hover {

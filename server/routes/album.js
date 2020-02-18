@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     let record = req.body
-    console.log(record)
+    console.log(req.body)
 
     db.addRecord(record.artist, record.album, record.genre)
         .then(id => {
