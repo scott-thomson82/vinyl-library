@@ -9,3 +9,11 @@ export function getRecords() {
     })
 
 }
+
+export function addRecord(record) {
+    return request.post(apiBaseUrl)
+    .send(record)
+    .then(res => {
+        return res.body
+    })
+}
