@@ -8,13 +8,15 @@ import Add from './Add'
 import Search from './Search'
 import List from './List'
 import Wanted from './Wanted'
+import Gif from './Gif'
 
 const App = () => {
   return (
     <>
     <Router>
     <Header />
-    <Route exact path='/' component={Sidebar} />
+    <Sidebar />
+    <Route exact path='/' component={Gif}/>
     <Route path='/add' component={Add} />
     <Route path='/search' component={Search} />
     <Route path='/list' component={List} />
