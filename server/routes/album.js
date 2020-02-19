@@ -16,10 +16,8 @@ router.post('/', (req, res) => {
 
     db.addRecord(record.artist, record.album, record.genre)
         .then(id => {
-            db.getRecords(id)
-                .then(response => {
-                    res.json(response)
-                })
+            res.json({})
+                
         })
 })
 
@@ -29,8 +27,7 @@ router.put('/:id', (req, res) => {
 
     db.updateRecord(id,record)
         .then(response => {
-            getRecords(response)
-            res.json(response)
+            res.json({})
         })
 })
 
@@ -38,7 +35,7 @@ router.delete('/:id', (req, res) => {
     let record = req.params
     db.deleteRecord(record.id)
         .then(response => {
-            res.json(response)
+            res.json({})
         })
 })
 
